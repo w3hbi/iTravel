@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".WeatherActivity">
+
+    
+    <ImageView
+        android:id="@+id/weatherIcon"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:src="@drawable/nuageux"
+        android:layout_marginTop="80dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:layout_above="@id/cityFinder">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/temperature"
+            android:paddingStart="30dp"
+            android:textSize="70sp"
+            android:textStyle="bold"
+            android:text="0°C"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/weatherCondition"
+            android:textSize="30sp"
+            android:text="weather condition"
+            android:paddingStart="30dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cityName"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:text="City Name"
+            android:paddingStart="30sp"
+            />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/cityFinder"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btn"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back to Home page"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            />
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

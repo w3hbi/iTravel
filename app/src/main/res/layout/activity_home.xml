@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeActivity"
+    android:id="@+id/main_home_layout"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:elevation="10dp"
+        android:background="@color/white"
+        tools:ignore="UnusedAttribute">
+
+        <RelativeLayout
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/plane" />
+
+                <ImageView
+                    android:layout_width="122dp"
+                    android:layout_height="50dp"
+                    android:paddingStart="-15dp"
+                    android:paddingLeft="-15dp"
+                    android:src="@drawable/logo"
+                    tools:ignore="RtlSymmetry" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_white"
+                android:drawableLeft="@drawable/ic_baseline_exit_to_app_24"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="@string/logout"
+                android:layout_alignParentEnd="true" />
+            
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/explore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Explore now :"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:paddingStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:textStyle="bold"
+        android:layout_below="@+id/tabLayout"
+        />
+
+    <HorizontalScrollView
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/explore"
+        android:fillViewport="true"
+        android:paddingBottom="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_post"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/btn"
+                android:drawableLeft="@drawable/post_add"
+                android:paddingStart="10dp"
+                android:text="Add a new post"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/weather"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/btn"
+                android:drawableLeft="@drawable/cloud"
+                android:paddingStart="10dp"
+                android:text="Explore Weather and Climate !"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_map"
+                android:layout_width="145dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/btn"
+                android:drawableLeft="@drawable/map_white"
+                android:paddingStart="10dp"
+                android:text="Explore map!"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/mur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Discover Places :"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:paddingStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:textStyle="bold"
+        android:layout_below="@+id/menu"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_posts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mur" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="2dp"
+        app:fab_addButtonColorNormal="@color/green"
+        app:fab_addButtonColorPressed="@color/white"
+        app:fab_addButtonSize="normal"
+        app:fab_expandDirection="up"
+        app:fab_labelStyle="@style/LabelStyle"
+        app:fab_labelsPosition="left">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/view_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/gray"
+            app:fab_icon="@drawable/person_green"
+            app:fab_size="mini"
+            app:fab_title="View my profile" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/profile_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/gray"
+            app:fab_icon="@drawable/settings"
+            app:fab_size="mini"
+            app:fab_title="Edit my profile" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</RelativeLayout>

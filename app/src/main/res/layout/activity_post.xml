@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostActivity"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:elevation="10dp"
+        android:background="@color/white"
+        tools:ignore="UnusedAttribute">
+
+        <RelativeLayout
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/plane" />
+
+                <ImageView
+                    android:layout_width="122dp"
+                    android:layout_height="50dp"
+                    android:paddingStart="-15dp"
+                    android:paddingLeft="-15dp"
+                    android:src="@drawable/logo"
+                    tools:ignore="RtlSymmetry" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_white"
+                android:drawableLeft="@drawable/ic_baseline_exit_to_app_24"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="@string/logout"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/post_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/tabLayout"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/noimage"
+        />
+
+    <LinearLayout
+        android:id="@+id/post_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/post_image">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Place Name"
+            android:textSize="15sp"
+            android:textColor="@color/gray"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"/>
+
+        <EditText
+            android:id="@+id/post_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text_style1"
+            android:paddingStart="15sp"
+            android:paddingEnd="10dp"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/latitude_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/post_field">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitude"
+            android:textSize="15sp"
+            android:textColor="@color/gray"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"/>
+
+        <EditText
+            android:id="@+id/latitude_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text_style1"
+            android:paddingStart="15sp"
+            android:paddingEnd="10dp"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/longitude_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/latitude_field">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude"
+        android:textSize="15sp"
+        android:textColor="@color/gray"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"/>
+
+        <EditText
+            android:id="@+id/longitude_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/edit_text_style1"
+            android:inputType="numberSigned|numberDecimal"
+            android:paddingStart="15sp"
+            android:paddingEnd="10dp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/set_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/longitude_field"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn"
+        android:text="Set new post"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btn_return"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_post"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn"
+        android:text="Back"
+        android:textColor="@color/white"/>
+
+
+
+</RelativeLayout>

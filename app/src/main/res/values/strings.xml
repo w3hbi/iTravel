@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="app_name">Itravel</string>
+
+    <string name="sign_up">Sign up</string>
+    <string name="sign_in">Sign in</string>
+    <string name="back">BACK</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="did_you_forget_you_password">Did you forget you password ?</string>
+    <string name="login_now">Login Now</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register_now">Register Now</string>
+    <string name="logout">Logout</string>
+    <string name="username">Username</string>
+    <string name="cover_pic">COVER PIC</string>
+    <string name="add_a_new_post">Add a new post</string>
+    <string name="forgot_password">Forgot Password</string>
+
+</resources>

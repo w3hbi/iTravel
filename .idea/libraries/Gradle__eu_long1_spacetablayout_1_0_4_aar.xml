@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: eu.long1:spacetablayout:1.0.4@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/22f73d5c1166e694af374c7e5367dc6a/jetified-spacetablayout-1.0.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/22f73d5c1166e694af374c7e5367dc6a/jetified-spacetablayout-1.0.4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/22f73d5c1166e694af374c7e5367dc6a/jetified-spacetablayout-1.0.4/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/eu.long1/spacetablayout/1.0.4/6ef6e939856882af0b5aa5383266955a89d91e73/spacetablayout-1.0.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/eu.long1/spacetablayout/1.0.4/ab46345b1d254207ae1782e0fa569f1749ef15ec/spacetablayout-1.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

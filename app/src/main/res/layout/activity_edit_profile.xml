@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:elevation="10dp"
+        android:background="@color/white"
+        tools:ignore="UnusedAttribute">
+
+        <RelativeLayout
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/plane" />
+
+                <ImageView
+                    android:layout_width="122dp"
+                    android:layout_height="50dp"
+                    android:paddingStart="-15dp"
+                    android:paddingLeft="-15dp"
+                    android:src="@drawable/logo"
+                    tools:ignore="RtlSymmetry" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_white"
+                android:drawableLeft="@drawable/ic_baseline_exit_to_app_24"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="@string/logout"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/default_user"
+        android:layout_marginTop="60dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/username_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/subtitle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textSize="15sp"
+            android:textColor="@color/gray"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"/>
+
+        <EditText
+            android:id="@+id/username_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text_style1"
+            android:drawableLeft="@drawable/email"
+            android:paddingLeft="15sp"
+            android:paddingRight="10dp"
+            android:drawableStart="@drawable/ic_baseline_person_pin_24"
+            android:paddingStart="15sp"
+            android:paddingEnd="10dp"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/email_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/username_field">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="15sp"
+            android:textColor="@color/gray"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"/>
+
+        <EditText
+            android:id="@+id/email_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text_style1"
+            android:drawableLeft="@drawable/email"
+            android:paddingLeft="15sp"
+            android:paddingRight="10dp"
+            android:drawableStart="@drawable/email"
+            android:paddingStart="15sp"
+            android:paddingEnd="10dp"
+            android:inputType="textEmailAddress" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/phone_number_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/email_field">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number"
+            android:textSize="15sp"
+            android:textColor="@color/gray"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            />
+
+            <EditText
+                android:id="@+id/phone_edit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_style1"
+                android:drawableLeft="@drawable/phone"
+                android:paddingLeft="15sp"
+                android:paddingRight="10dp"
+                android:drawableStart="@drawable/phone"
+                android:paddingStart="15sp"
+                android:paddingEnd="10dp"
+                android:inputType="number"
+                android:autofillHints="@string/phone_number" />
+        </LinearLayout>
+
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="update profile"
+        android:background="@drawable/btn"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Back to profile"
+        android:background="@drawable/btn"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal">
+
+        <!-- Logging Button Design -->
+        <Button
+            android:id="@+id/btn_login"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_white"
+            android:layout_margin="20dp"
+
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+
+
+            android:text="@string/sign_in"
+            android:textColor="@color/green"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/btn_register"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn"
+            android:layout_margin="20dp"
+
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+
+            android:text="@string/sign_up"
+            android:textColor="@color/white"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
