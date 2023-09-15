@@ -2,9 +2,11 @@
 
 iTravel is an Android application developed with Java and Firebase, designed for adventurers and travel enthusiasts. It allows you to capture and store memorable moments during your travels, complete with location coordinates, and share them with the iTravel community. Explore the world through shared images, and easily locate the places you've visited on an interactive map.
 
-![iTravel Screenshots](https://github.com/mohamedwahbiyaakoub/itravel-project-master/blob/main/blob/screen1.jpg?raw=true)
-![iTravel Screenshots](https://github.com/mohamedwahbiyaakoub/itravel-project-master/blob/main/blob/screen2.jpg?raw=true)
-![iTravel Screenshots](https://github.com/mohamedwahbiyaakoub/itravel-project-master/blob/main/blob/screen3.jpg?raw=true)
+<div style="display: flex; justify-content: space-between; margin: 10px;">
+  <img src="https://github.com/mohamedwahbiyaakoub/itravel-project-master/blob/main/blob/screen1.jpg?raw=true" alt="iTravel Screenshot 1" width="200" />
+  <img src="https://github.com/mohamedwahbiyaakoub/itravel-project-master/blob/main/blob/screen2.jpg?raw=true" alt="iTravel Screenshot 2" width="200" />
+  <img src="https://github.com/mohamedwahbiyaakoub/itravel-project-master/blob/main/blob/screen3.jpg?raw=true" alt="iTravel Screenshot 3" width="200" />
+</div>
 
 
 ## Features
